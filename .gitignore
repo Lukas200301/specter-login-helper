@@ -1,0 +1,20 @@
+# Never commit the stats.fm/Specter installer or any binaries
+*.exe
+Specter-Setup*
+
+# Node (only if you re-add the optional Node variant)
+node_modules/
+package-lock.json
+
+# Throwaway browser profiles the login script creates
+specter_cdp_*/
+
+# Secrets / local storage artifacts - never commit a captured token
+*.secure
+token.txt
+
+# OS / editor cruft
+Thumbs.db
+.DS_Store
+*.swp
+.vscode/
